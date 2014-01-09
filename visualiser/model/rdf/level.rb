@@ -7,7 +7,7 @@ class Level
     @upper_age = upper_age
   end
 
-  def hash
+  def prepare_array
     { 'id' => @id, 'name' => @name, 'lower_age' => @lower_age, 'upper_age' => @upper_age}
   end
 end

@@ -9,10 +9,10 @@ class Phase
   end
 
   def addLevels(level)
-    @levels.push level.hash
+    @levels.push level.prepare_array
   end
 
-  def hash
+  def prepare_array
     {
         'id' => @id, 'name' => @name,
         'lower_age' => @lower_age,

@@ -7,10 +7,10 @@ class Levels
   end
 
   def addLevel(level)
-    @levels.push level.hash
+    @levels.push level.prepare_array
   end
 
-  def hash
+  def prepare_array
     [ @levels ]
   end
 

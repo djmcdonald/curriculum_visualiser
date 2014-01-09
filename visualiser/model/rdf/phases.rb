@@ -7,7 +7,7 @@ class Phases
   end
 
   def addPhase(phase)
-    @phases.push phase.hash
+    @phases.push phase.prepare_array
   end
 
   def to_json
