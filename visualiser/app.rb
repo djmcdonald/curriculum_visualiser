@@ -1,5 +1,6 @@
 require 'sinatra'
 require 'haml'
+require 'hamlbars'
 require 'helpers/level_builder'
 require 'helpers/phases_builder'
 

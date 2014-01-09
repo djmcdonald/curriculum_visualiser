@@ -2,6 +2,7 @@
 %html
   %head
     %title Curriculum Visualiser
+    %script(src="/js/handlebars.js")
 
   %body
     %div#content
@@ -10,3 +11,10 @@
       %p
         A tool to visualise the Curriculum ontology used by the
         %a{ :href => 'http://www.bbc.co.uk/education', :title => 'Knowledge and Learning Beta site' } Knowledge and Learning Beta site
+
+
+      %script#phases-template(type="text/x-handlebars-template")
+        = hb 'list phases' do
+          %ul.phases
+            %li<
+              = hb 'name'
