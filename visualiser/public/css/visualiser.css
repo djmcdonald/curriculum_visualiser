@@ -4,6 +4,11 @@ body{
   font-family:Arial;
 }
 
+#content{
+	margin:0px auto;
+	width:1004px;
+}
+
 #canvas{
 	border:1px solid #ccc;
 }

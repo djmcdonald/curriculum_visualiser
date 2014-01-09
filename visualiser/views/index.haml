@@ -1,9 +1,9 @@
-!!!5
+!!! 5
 %html
   %head
     %title Curriculum Visualiser
     %script{:type => "text/javascript", src:"/js/jquery-1.10.2.js"}
-    %script{:type => "text/javascript", src:"/js/handlebars.runtime-v1.3.0.js"}
+    %script{:type => "text/javascript", src:"/js/handlebars.js"}
     %script{:type => "text/javascript", src:"/js/app.js"}
 
     %link{:type => "text/css", :rel => "stylesheet", :href => "/css/visualiser.css"}
@@ -16,4 +16,24 @@
         A tool to visualise the Curriculum ontology used by the
         %a{ :href => 'http://www.bbc.co.uk/education', :title => 'Knowledge and Learning Beta site' } Knowledge and Learning Beta site
 
-        #canvas &nbsp;
+      #template-div
+
+      %script#phases-template(type="text/x-handlebars-template")
+        = hb 'each phases' do
+          %ul.phases
+            %li<
+              Name:
+              = hb 'name'
+            %li<		
+              Lower age:
+              = hb 'lower_age'
+            %li<
+              Upper age:
+              = hb 'upper_age'
+            %ul.levels
+              = hb 'each levels' do
+                %li<
+                  Name: 
+                  = hb 'Name'
+              
+
