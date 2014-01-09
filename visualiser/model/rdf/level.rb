@@ -1,9 +1,9 @@
 class Level
 
-  def initialize
-    @name = "KS3"
-    @lower_age = 7
-    @upper_age = 14
+  def initialize(name, lower_age, upper_age)
+    @name = name
+    @lower_age = lower_age
+    @upper_age = upper_age
   end
 
   def hash
