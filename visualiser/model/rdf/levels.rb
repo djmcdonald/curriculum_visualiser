@@ -1,20 +1,20 @@
 require 'json'
+require 'model/rdf/level'
 
 class Levels
-  @levels = Array.new
+
+  def initialize
+    @levels = Array.new
+  end
 
   def addLevel(level)
 
   end
 
-  def levels
-    "KS3"
-  end
-
   def to_json
-    { 'levels' => [
-        { 'name' => 'Primary' },
-        { 'name' => 'Secondary' }
-    ] }.to_json
+    @levels.push Level.new.hash
+    @levels.push Level.new.hash
+
+    { 'levels' => @levels }.to_json
   end
 end
