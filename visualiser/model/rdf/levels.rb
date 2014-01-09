@@ -10,6 +10,10 @@ class Levels
     @levels.push level.hash
   end
 
+  def hash
+    [ @levels ]
+  end
+
   def to_json
     { 'levels' => @levels }.to_json
   end

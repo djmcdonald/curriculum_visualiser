@@ -11,7 +11,8 @@ class LevelBuilder
     @rdfRepository = rdfRepository
   end
 
-  def buildLevels
+  def buildLevelsOld
+
     levels = Levels.new
 
     reader = RDF::Reader.for(:rdfxml).new(@rdfRepository.levels)
@@ -30,7 +31,9 @@ class LevelBuilder
     })
 
     query.execute(graph).each do |solution|
-      levels.addLevel Level.new(solution.label.to_s,
+      id = /(z[0-9a-z]{6})/.match(solution[:level].to_s)[0]
+      levels.addLevel Level.new(id,
+                                solution.label.to_s,
                                 solution.lowerAgeBoundary.to_i,
                                 solution.upperAgeBoundary.to_i)
 
