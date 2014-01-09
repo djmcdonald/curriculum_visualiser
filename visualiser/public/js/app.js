@@ -22,7 +22,7 @@ function Visualiser() {
 				 + '</ul>';
 				 //+ '<li><ul><li>' + element.levels.length + '</li></ul></li>
         	});
-		console.log(canvasString);
+		//console.log(canvasString);
 		$('#canvas').html(canvasString);
 
 	}
@@ -31,11 +31,10 @@ function Visualiser() {
 	
 	   var url = this.restfulURL + urlString;
 	   $.getJSON( url, function( json ){
-var source = $('#phases-template').html();
-var template = Handlebars.compile(source);
+	       var source = $('#phases-template').html();
+	       var template = Handlebars.compile(source);
 		$('#template-div').html(template(json));
-		//writeToCanvas(json.phases, 'phases');
-		console.log($('#template-div').html());
+		//console.log($('#template-div').html());
 	   });
 	};
 

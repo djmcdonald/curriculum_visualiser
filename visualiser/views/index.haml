@@ -13,27 +13,40 @@
       %h1 Curriculum Visualiser
 
       %p
-        A tool to visualise the Curriculum ontology used by the
-        %a{ :href => 'http://www.bbc.co.uk/education', :title => 'Knowledge and Learning Beta site' } Knowledge and Learning Beta site
+        A tool to visualise the 
+        %a{ :href => 'http://www.bbc.co.uk/ontologies/curriculum/2013-04-03.shtml', :title => 'Knowledge and Learning Beta site' } Curriculum ontology 
+        used by the
+        %a{ :href => 'http://www.bbc.co.uk/education', :title => 'Knowledge and Learning Beta site' } Knowledge and Learning 
+        Beta site
 
       #template-div
 
       %script#phases-template(type="text/x-handlebars-template")
+        %h2 phases
         = hb 'each phases' do
           %ul.phases
-            %li<
+            %li
               Name:
               = hb 'name'
-            %li<		
+            %li		
               Lower age:
               = hb 'lower_age'
-            %li<
+            %li
               Upper age:
               = hb 'upper_age'
             %ul.levels
+              %li 
+                %h3 levels
               = hb 'each levels' do
                 %li<
+                  %a{ :event => { :on => 'click', :action => 'clicked' } 	}
                   Name: 
-                  = hb 'Name'
-              
-
+                  = hb 'name'
+                .expandableLevelData  
+                  %li<
+                    %a{ href: '#', :class => 'widget', :id => 'id' }
+                      ID: 
+                      = hb 'id'
+                  %li<
+                    Description: 
+                    = hb "description"
