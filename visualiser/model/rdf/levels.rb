@@ -6,12 +6,12 @@ class Levels
     @levels = Array.new
   end
 
-  def addLevel(level)
+  def add_level(level)
     @levels.push level.prepare_array
   end
 
   def prepare_array
-    [ @levels ]
+    @levels
   end
 
   def to_json

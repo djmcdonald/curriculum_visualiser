@@ -8,7 +8,7 @@ class Phase
     @levels = Array.new
   end
 
-  def addLevels(level)
+  def add_levels(level)
     @levels.push level.prepare_array
   end
 

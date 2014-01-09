@@ -6,7 +6,7 @@ class Phases
     @phases = Array.new
   end
 
-  def addPhase(phase)
+  def add_phase(phase)
     @phases.push phase.prepare_array
   end
 
