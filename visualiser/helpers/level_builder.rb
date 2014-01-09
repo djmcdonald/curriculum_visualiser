@@ -23,7 +23,10 @@ class LevelBuilder
         6,
         9
     )
-    early_level.add_programme_of_study ProgrammeOfStudy.new
+
+    programme_of_study = ProgrammeOfStudy.new 'Early and 1st level Art and Design'
+
+    early_level.add_programme_of_study programme_of_study
     levels.add_level early_level
 
     levels.add_level Level.new('zvbc87h', 'Key Stage 2 is a phase of primary education for pupils aged 7 to 11 in England and Wales, or 8 to 11 in Northern Ireland.', 'KS2', 7, 11)
