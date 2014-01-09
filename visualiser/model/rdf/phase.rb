@@ -5,11 +5,11 @@ class Phase
     @lower_age = lower_age
     @upper_age = upper_age
 
-    @levels = Array.new
+    @levels
   end
 
   def add_levels(level)
-    @levels.push level.prepare_array
+    @levels = level.prepare_array
   end
 
   def prepare_array
