@@ -15,7 +15,7 @@ class PhasesBuilder
     phases = Phases.new
 
     early_level = Level.new 'zgckjxs', 'Early and 1st level', 'Early level is a phase of pre-school and primary education in Scotland, generally for pupils aged 3 to 6.  First level is a phase of primary education in Scotland, generally for pupils aged 6 to 9.', 5, 11
-    ks2 = Level.new 'zvbc87h', 'Key Stage 2 is a phase of primary education for pupils aged 7 to 11 in England and Wales, or 8 to 11 in Northern Ireland.', 'KS2', 7, 11
+    ks2 = Level.new 'zvbc87h', 'KS2', 'Key Stage 2 is a phase of primary education for pupils aged 7 to 11 in England and Wales, or 8 to 11 in Northern Ireland.', 7, 11
     primary_levels = Levels.new
     primary_levels.add_level early_level
     primary_levels.add_level ks2
