@@ -3,9 +3,13 @@ GEM
   specs:
     haml (4.0.5)
       tilt
+    mime-types (2.0)
     rack (1.5.2)
     rack-protection (1.5.1)
       rack
+    rdf (1.1.1.1)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
     shotgun (0.9)
       rack (>= 1.0)
     sinatra (1.4.4)
@@ -19,5 +23,7 @@ PLATFORMS
 
 DEPENDENCIES
   haml
+  rdf
+  rest-client
   shotgun
   sinatra
