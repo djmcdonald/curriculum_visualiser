@@ -1,5 +1,4 @@
-class Level
-
+class Phase
   def initialize(id, name, lower_age, upper_age)
     @id = id
     @name = name
