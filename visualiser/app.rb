@@ -1,6 +1,5 @@
 require 'sinatra'
 require 'haml'
-require 'helpers/rdf_repository'
 require 'helpers/level_builder'
 
 before do

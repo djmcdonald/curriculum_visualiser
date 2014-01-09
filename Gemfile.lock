@@ -1,13 +1,28 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    equivalent-xml (0.4.0)
+      nokogiri (>= 1.4.3)
     haml (4.0.5)
       tilt
+    htmlentities (4.3.1)
     mime-types (2.0)
+    nokogiri (1.5.9)
     rack (1.5.2)
     rack-protection (1.5.1)
       rack
     rdf (1.1.1.1)
+    rdf-rdfa (1.1.0)
+      haml (>= 4.0)
+      htmlentities (>= 4.3.1)
+      rdf (>= 1.1.0)
+      rdf-xsd (>= 1.1)
+    rdf-rdfxml (1.1.0)
+      rdf (>= 1.1)
+      rdf-rdfa (>= 1.1)
+      rdf-xsd (>= 1.1)
+    rdf-xsd (1.1.0)
+      rdf (>= 1.1)
     rest-client (1.6.7)
       mime-types (>= 1.16)
     shotgun (0.9)
@@ -22,8 +37,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  equivalent-xml
   haml
+  nokogiri (= 1.5.9)
   rdf
+  rdf-rdfxml
   rest-client
   shotgun
   sinatra
