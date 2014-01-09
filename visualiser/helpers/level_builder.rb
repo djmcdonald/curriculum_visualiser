@@ -11,7 +11,8 @@ class LevelBuilder
     @rdfRepository = rdfRepository
   end
 
-  def buildLevels
+  def buildLevelsOld
+
     levels = Levels.new
 
     reader = RDF::Reader.for(:rdfxml).new(@rdfRepository.levels)

@@ -14,29 +14,18 @@ class PhasesBuilder
   def buildPhases
     phases = Phases.new
 
-    reader = RDF::Reader.for(:rdfxml).new(@rdfRepository.phases)
+    early_level = Level.new 'zgckjxs', 'Early and 1st level', 5, 11
+    ks2 = Level.new 'zvbc87h', 'KS2', 7, 11
+    primary_levels = Levels.new
+    primary_levels.addLevel early_level
+    primary_levels.addLevel ks2
 
-    graph = RDF::Graph.new
-    reader.each_statement { |statement| graph.insert statement }
+    primary_phase = Phase.new 'zvbc87h', 'Primary', 5, 11
+    primary_phase.addLevels primary_levels
+    phases.addPhase primary_phase
 
-
-    query = RDF::Query.new({
-                               :level => {
-                                   RDF.type  => CURRICULUM.Phase,
-                                   RDFS.label => :label,
-                                   CURRICULUM.lowerAgeBoundary => :lowerAgeBoundary,
-                                   CURRICULUM.upperAgeBoundary => :upperAgeBoundary
-                               }
-                           })
-
-    query.execute(graph).each do |solution|
-      id = /(z[0-9a-z]{6})/.match(solution[:level].to_s)[0]
-      phases.addPhase Phase.new(id,
-                                solution.label.to_s,
-                                solution.lowerAgeBoundary.to_i,
-                                solution.upperAgeBoundary.to_i)
-
-    end
+    secondary_phase = Phase.new 'zc9d7ty', 'Secondary', 11, 18
+    phases.addPhase secondary_phase
 
     phases
   end
