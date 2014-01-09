@@ -17,7 +17,10 @@ before "/education/*" do
   content_type 'application/json'
 end
 
-get '/education/levels' do
+get '/education/levels/:id' do |id|
+  if id != 'zgckjxs'
+    halt 404
+  end
   @level_builder.buildLevels.to_json
 end
 

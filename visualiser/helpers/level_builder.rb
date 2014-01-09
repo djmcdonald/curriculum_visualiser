@@ -2,6 +2,7 @@ require 'rdf'
 require 'rdf/rdfxml'
 require 'helpers/rdf_repository'
 require 'model/rdf/levels'
+require 'model/rdf/programme_of_study'
 
 class LevelBuilder
   CURRICULUM = RDF::Vocabulary.new("http://www.bbc.co.uk/ontologies/curriculum/")
@@ -11,33 +12,21 @@ class LevelBuilder
     @rdfRepository = rdfRepository
   end
 
-  def buildLevelsOld
+  def buildLevels
 
     levels = Levels.new
 
-    reader = RDF::Reader.for(:rdfxml).new(@rdfRepository.levels)
+    early_level = Level.new(
+        'zgckjxs',
+        'Early and 1st level',
+        'Early level is a phase of pre-school and primary education in Scotland, generally for pupils aged 3 to 6.  First level is a phase of primary education in Scotland, generally for pupils aged 6 to 9.',
+        6,
+        9
+    )
+    early_level.add_programme_of_study ProgrammeOfStudy.new
+    levels.add_level early_level
 
-    graph = RDF::Graph.new
-    reader.each_statement { |statement| graph.insert statement }
-
-
-    query = RDF::Query.new({
-      :level => {
-        RDF.type  => CURRICULUM.KeyStage,
-        RDFS.label => :label,
-        CURRICULUM.lowerAgeBoundary => :lowerAgeBoundary,
-        CURRICULUM.upperAgeBoundary => :upperAgeBoundary
-      }
-    })
-
-    query.execute(graph).each do |solution|
-      id = /(z[0-9a-z]{6})/.match(solution[:level].to_s)[0]
-      levels.addLevel Level.new(id,
-                                solution.label.to_s,
-                                solution.lowerAgeBoundary.to_i,
-                                solution.upperAgeBoundary.to_i)
-
-    end
+    levels.add_level Level.new('zvbc87h', 'Key Stage 2 is a phase of primary education for pupils aged 7 to 11 in England and Wales, or 8 to 11 in Northern Ireland.', 'KS2', 7, 11)
 
     levels
   end

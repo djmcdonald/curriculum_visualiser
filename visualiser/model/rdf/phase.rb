@@ -8,11 +8,11 @@ class Phase
     @levels = Array.new
   end
 
-  def addLevels(level)
-    @levels.push level.hash
+  def add_levels(level)
+    @levels.push level.prepare_array
   end
 
-  def hash
+  def prepare_array
     {
         'id' => @id, 'name' => @name,
         'lower_age' => @lower_age,
