@@ -50,3 +50,11 @@
                   %li<
                     Description: 
                     = hb "description"
+
+      %script#levels-template(type="text/x-handlebars-template")
+        %h2 levels
+        = hb 'each phases' do
+          %ul.phases
+            %li
+              Name:
+              = hb 'name'
