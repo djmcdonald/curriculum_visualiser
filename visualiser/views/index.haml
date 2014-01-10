@@ -18,7 +18,7 @@
         used by the
         %a{ :href => 'http://www.bbc.co.uk/education', :title => 'Knowledge and Learning Beta site' } Knowledge and Learning 
         Beta site
-
+      #messages
       #template-div
 
       %script#phases-template(type="text/x-handlebars-template")
@@ -39,12 +39,12 @@
                 %h3 levels
               = hb 'each levels' do
                 %li<
-                  %a{ :event => { :on => 'click', :action => 'clicked' } 	}
-                  Name: 
-                  = hb 'name'
+                  %a{ :onClick=> 'javascript:visualGuide.showLevelData(this)', :event => { :on => 'click', :action => 'clicked' } 	}
+                    Name: 
+                    = hb 'name'
                 .expandableLevelData  
                   %li<
-                    %a{ href: '#', :class => 'widget', :id => 'id' }
+                    %a{ href: '#', :class => 'widget', :onClick=> 'javascript:visualGuide.getLevelsFromUID(this)' }
                       ID: 
                       = hb 'id'
                   %li<
