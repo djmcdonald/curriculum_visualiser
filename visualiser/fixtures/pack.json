@@ -1,4 +1,8 @@
+
+
+
 {
+
     "name": "Levels",
     "children": [
         {
@@ -7,17 +11,17 @@
                 {
                     "name": "KS1",
                     "children": [
-                        {"name":"Art and Design",  "children": [
+                        {"name":"Art and Design", "colour": "#ede487", "children": [
                             { "name": "Disciplines" },
                             { "name": "Visual and tactile elements",
                                 "children": [
-                                    {"name":"Colour"},
-                                    {"name":"Pattern"},
-                                    {"name":"Texture"},
-                                    {"name":"Line"},
-                                    {"name":"Shape"},
-                                    {"name":"Composition"},
-                                    {"name":"Composition"},
+                                    {"name":"Colour","colour": "#e8e596"},
+                                    {"name":"Pattern", "colour": "#f0e2a3"},
+                                    {"name":"Colour", "colour": "#ede487"},
+                                    {"name":"Pattern", "colour": "#72659d"},
+                                    {"name":"Shape",  "colour": "#8a6e9e"},
+                                    {"name":"Space", "colour": "#8f5c85"},
+                                    {"name":"Composition","colour": "#934b8b"}
                                 ]
                             },
                             { "name": "Media and Materials" },
