@@ -1,61 +1,32 @@
 <!doctype html>
 <html>
-  <head>
+<head>
     <title>Curriculum Visualiser</title>
 
-    <link type="text/css" rel="stylesheet" href="/css/visualiser.css" />
+    <link type="text/css" rel="stylesheet" href="/css/visualiser.css"/>
+</head>
 
-      <style>
-          text {
-              font-size: 11px;
-              pointer-events: none;
-          }
+<body>
+<div id="content">
+    <h1>Curriculum Visualiser</h1>
 
-          text.parent {
-              fill: #1f77b4;
-          }
+    <p>A tool to visualise the
+        <a href="http://www.bbc.co.uk/ontologies/curriculum/2013-04-03.shtml" title="Curriculum ontology">Curriculum
+            ontology</a> used by the
+        <a href="http://www.bbc.co.uk/education" title="Knowledge and Learning Beta site">Knowledge and Learning Beta
+            site</a>.</p>
 
-          circle {
-              fill: #ccc;
-              stroke: #999;
-              pointer-events: all;
-          }
+    <ul class="navigation">
+        <li><a href="#" id="pack_nav">Pack Layout</a></li>
+        <li><a href="#" id="sunburst_nav">Sunburst</a></li>
+    </ul>
 
-          circle.parent {
-              fill: #1f77b4;
-              fill-opacity: .1;
-              stroke: steelblue;
-          }
+    <div class="chart"></div>
+</div>
 
-          circle.parent:hover {
-              stroke: #ff7f0e;
-              stroke-width: .5px;
-          }
-
-          circle.child {
-              pointer-events: none;
-          }
-      </style>
-  </head>
-
-  <body>
-    <div id="content">
-      <h1>Curriculum Visualiser</h1>
-
-      <p>A tool to visualise the <a href="http://www.bbc.co.uk/ontologies/curriculum/2013-04-03.shtml" title="Curriculum ontology">Curriculum ontology</a> used by the <a href="http://www.bbc.co.uk/education" title="Knowledge and Learning Beta site">Knowledge and Learning Beta site</a>.</p>
-
-        <div class="chart"></div>
-
-      <div id='messages'></div>
-      <div id='template-div'></div>
-      <script id='phases-template' type='text/x-handlebars-template'></script>
-
-      <script id='levels-template' type='text/x-handlebars-template'></script>
-    </div>
-
-    <script src="/js/jquery-1.10.2.js"></script>
-    <script src="/js/handlebars.js"></script>
-    <script src="/js/d3.js"></script>
-    <script src="/js/app.js"></script>
-  </body>
+<script src="/js/jquery-1.10.2.js"></script>
+<script src="/js/handlebars.js"></script>
+<script src="/js/d3.js"></script>
+<script src="/js/app.js"></script>
+</body>
 </html>
