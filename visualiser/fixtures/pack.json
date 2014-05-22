@@ -7,7 +7,17 @@
                 {
                     "name": "KS1",
                     "children": [
-                        {"name": "Art & Design", "size": 20},
+                        {"name": "Art and Design",
+                            "children": [
+                            {"name":"Art and design skills",
+                                "name":"Art in the real world",
+                                "name":"Craft",
+                                "name":"Design",
+                                "name":"Elements and principles of art",
+                                "name":"Fine art",
+                                "name":"The creative process"}
+                        ],
+                        "size": 20},
                         {"name": "Geography", "size": 10},
                         {"name": "Maths", "size": 23}
                     ]
@@ -15,7 +25,15 @@
                 {
                     "name": "KS2",
                     "children": [
-                        {"name": "Art & Design", "size": 25},
+                        {"name": "Art & Design",  "children": [
+                            {"name":"Art and design skills",
+                                "name":"Art in the real world",
+                                "name":"Craft",
+                                "name":"Design",
+                                "name":"Elements and principles of art",
+                                "name":"Fine art",
+                                "name":"The creative process"}
+                        ], "size": 25},
                         {"name": "Geography", "size": 14},
                         {"name": "Maths", "size": 53}
                     ]
@@ -29,6 +47,7 @@
                     "name": "GCSE",
                     "children": [
                         {"name": "Architecture", "size": 2},
+                        {"name": "Art and Design", "size":6},
                         {"name": "Biology", "size": 40},
                         {"name": "Maths", "size": 23}
                     ]
