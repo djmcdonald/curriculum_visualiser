@@ -40,3 +40,5 @@ var visualGuide = new Visualiser;
 visualGuide.test();
 visualGuide.getRestfulData('/education/phases');
 
+d3.select("body").transition()
+    .style("background-color", "black");
