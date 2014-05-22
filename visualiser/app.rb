@@ -71,3 +71,11 @@ get '/education/phases' do
 }
   phases
 end
+
+get '/education/phases/pack' do
+  file = File.open('fixtures/pack.json', "rb")
+  contents = file.read
+  file.close
+
+  contents
+end
