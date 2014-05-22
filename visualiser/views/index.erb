@@ -4,6 +4,38 @@
     <title>Curriculum Visualiser</title>
 
     <link type="text/css" rel="stylesheet" href="/css/visualiser.css" />
+
+      <style>
+          text {
+              font-size: 11px;
+              pointer-events: none;
+          }
+
+          text.parent {
+              fill: #1f77b4;
+          }
+
+          circle {
+              fill: #ccc;
+              stroke: #999;
+              pointer-events: all;
+          }
+
+          circle.parent {
+              fill: #1f77b4;
+              fill-opacity: .1;
+              stroke: steelblue;
+          }
+
+          circle.parent:hover {
+              stroke: #ff7f0e;
+              stroke-width: .5px;
+          }
+
+          circle.child {
+              pointer-events: none;
+          }
+      </style>
   </head>
 
   <body>
@@ -12,48 +44,13 @@
 
       <p>A tool to visualise the <a href="http://www.bbc.co.uk/ontologies/curriculum/2013-04-03.shtml" title="Curriculum ontology">Curriculum ontology</a> used by the <a href="http://www.bbc.co.uk/education" title="Knowledge and Learning Beta site">Knowledge and Learning Beta site</a>.</p>
 
+        <div class="chart"></div>
+
       <div id='messages'></div>
       <div id='template-div'></div>
-      <script id='phases-template' type='text/x-handlebars-template'>
-        <h2>phases</h2>
-        {{#each phases}}<ul class='phases'>
-          <li>
-            Name:
-            {{name}}
-          </li>
-          <li>
-            Lower age:
-            {{lower_age}}
-          </li>
-          <li>
-            Upper age:
-            {{upper_age}}
-          </li>
-          <ul class='levels'>
-            <li>
-              <h3>levels</h3>
-            </li>
-            {{#each levels}}<li><a event-action='clicked' event-on='click' onClick='javascript:visualGuide.showLevelData(this)'>
-              Name:
-              {{name}}            </a></li>
-            <div class='expandableLevelData'>
-              <li><a class='widget' href='#' onClick='javascript:visualGuide.getLevelsFromUID(this)'>
-                ID:
-                {{id}}              </a></li>
-              <li>Description:{{description}}</li>
-            </div>{{/each}}
-          </ul>
-        </ul>{{/each}}
-      </script>
-      <script id='levels-template' type='text/x-handlebars-template'>
-        <h2>levels</h2>
-        {{#each phases}}<ul class='phases'>
-          <li>
-            Name:
-            {{name}}
-          </li>
-        </ul>{{/each}}
-      </script>
+      <script id='phases-template' type='text/x-handlebars-template'></script>
+
+      <script id='levels-template' type='text/x-handlebars-template'></script>
     </div>
 
     <script src="/js/jquery-1.10.2.js"></script>

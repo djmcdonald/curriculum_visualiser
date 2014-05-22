@@ -1,0 +1,39 @@
+{
+    "name": "Levels",
+    "children": [
+        {
+            "name": "Primary",
+            "children": [
+                {
+                    "name": "KS1",
+                    "children": [
+                        {"name": "Art & Design", "size": 20},
+                        {"name": "Geography", "size": 10},
+                        {"name": "Maths", "size": 23}
+                    ]
+                },
+                {
+                    "name": "KS2",
+                    "children": [
+                        {"name": "Art & Design", "size": 25},
+                        {"name": "Geography", "size": 14},
+                        {"name": "Maths", "size": 53}
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Secondary",
+            "children" : [
+                {
+                    "name": "GCSE",
+                    "children": [
+                        {"name": "Architecture", "size": 2},
+                        {"name": "Biology", "size": 40},
+                        {"name": "Maths", "size": 23}
+                    ]
+                }
+            ]
+        }
+    ]
+}
