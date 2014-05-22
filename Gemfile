@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
+
+gem 'rerun', '~> 0.10.0'
 gem 'sinatra', '~> 1.4.5'
 gem 'sinatra-contrib', '~> 1.4.2'
 gem 'nokogiri', '1.5.9'
@@ -6,4 +8,5 @@ gem 'shotgun'
 gem 'rest-client'
 gem 'rdf'
 gem 'rdf-rdfxml'
+gem 'rdf-json', '~> 1.1.0'
 gem 'equivalent-xml'
