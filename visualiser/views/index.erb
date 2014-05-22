@@ -10,20 +10,28 @@
 
 <body>
 <div id="content">
-    <h1>Curriculum Visualiser</h1>
+    <div class="container">
+        <div class="navbar-header">
+            <a href="http://www.bbc.co.uk/education" class="navbar-brand">bbc.co.uk/education</a>
+        </div>
 
-    <p>A tool to visualise the
-        <a href="http://www.bbc.co.uk/ontologies/curriculum/2013-04-03.shtml" title="Curriculum ontology">Curriculum
-            ontology</a> used by the
-        <a href="http://www.bbc.co.uk/education" title="Knowledge and Learning Beta site">Knowledge and Learning Beta
-            site</a>.</p>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+            <ul class="nav navbar-nav">
+                <li><a href="#" id="pack_nav">Pack Layout</a></li>
+                <li><a href="#" id="sunburst_nav">Sunburst</a></li>
+            </ul>
+        </nav>
 
-    <ul class="navigation">
-        <li><a href="#" id="pack_nav">Pack Layout</a></li>
-        <li><a href="#" id="sunburst_nav">Sunburst</a></li>
-    </ul>
+        <h1>Curriculum Visualiser</h1>
 
-    <div class="chart"></div>
+        <p>A tool to visualise the
+            <a href="http://www.bbc.co.uk/ontologies/curriculum/2013-04-03.shtml" title="Curriculum ontology">Curriculum
+                ontology</a> used by the
+            <a href="http://www.bbc.co.uk/education" title="Knowledge and Learning Beta site">Knowledge and Learning Beta
+                site</a>.</p>
+
+        <div class="chart"></div>
+    </div>
 </div>
 
 <script src="/js/jquery-1.10.2.js"></script>
