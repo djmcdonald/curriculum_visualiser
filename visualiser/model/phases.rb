@@ -1,5 +1,4 @@
 require 'json'
-require 'model/rdf/phase'
 
 class Phases
   def initialize
@@ -7,10 +6,13 @@ class Phases
   end
 
   def add_phase(phase)
-    @phases.push phase.prepare_array
+    @phases.push phase
   end
 
-  def to_json
-    { 'phases' => @phases }.to_json
+  def json
+    {
+        "name" => "Levels",
+        "children" => @phases
+    }.to_json
   end
 end
