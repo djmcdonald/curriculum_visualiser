@@ -1,6 +1,10 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Curriculum Visualiser</title>
 
     <link type="text/css" rel="stylesheet" href="/css/visualiser.css"/>
@@ -9,34 +13,43 @@
 </head>
 
 <body>
-<div id="content">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a href="http://www.bbc.co.uk/education" class="navbar-brand">bbc.co.uk/education</a>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="http://www.bbc.co.uk/education" class="navbar-brand">bbc.co.uk/education</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#" id="pack_nav">Pack Layout</a></li>
+                    <li><a href="#" id="sunburst_nav">Sunburst</a></li>
+                    <li><a name="#" id="blocks_name">Blocks</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
         </div>
+    </div>
 
-        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-            <ul class="nav navbar-nav">
-                <li><a href="#" id="pack_nav">Pack Layout</a></li>
-                <li><a href="#" id="sunburst_nav">Sunburst</a></li>
-                <li><a name="#" id="blocks_name">Blocks</a></li>
-            </ul>
-        </nav>
-
-        <h1>Curriculum Visualiser</h1>
+    <div class="container">
+        <div class="starter-template">
+        <h1 class="visualiser-header">Curriculum Visualiser</h1>
         <p>A tool to visualise the
             <a href="http://www.bbc.co.uk/ontologies/curriculum/2013-04-03.shtml" title="Curriculum ontology">Curriculum
                 ontology</a> used by the
             <a href="http://www.bbc.co.uk/education" title="Knowledge and Learning Beta site">Knowledge and Learning Beta
                 site</a>.</p>
-
-        <div class="chart"></div>
+        </div>
     </div>
-</div>
 
-<script src="/js/jquery-1.10.2.js"></script>
-<script src="/js/bootstrap.js"></script>
-<script src="/js/d3.js"></script>
-<script src="/js/app.js"></script>
+    <div class="chart"></div>
+
+    <script src="/js/jquery-1.10.2.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/d3.js"></script>
+    <script src="/js/app.js"></script>
 </body>
 </html>
