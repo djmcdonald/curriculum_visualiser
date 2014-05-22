@@ -15,7 +15,11 @@ body{
 #canvas, #messages{
 	border:1px solid #ccc;
 }
-h1, h2, h3{ margin:0 0 10px 0  }
+
+.visualiser-header {
+    margin-top: 60px;
+}
+
 .phases { display:block;border:1px solid #ddd;clear:both;  }
 .phases li { float:left;list-style:none;margin:0 20px 0 0; }
 .levels li { clear:both;list-style:none;margin:0 20px 0 0; }
