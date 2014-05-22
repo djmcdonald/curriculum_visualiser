@@ -6,6 +6,8 @@ require 'helpers/level_builder'
 $LOAD_PATH.unshift '.'
 set :environment, :development
 
+set :environment, :development
+
 before do
   @rdf_repository = RDFRepository.new
   @level_builder = LevelBuilder.new @rdf_repository
