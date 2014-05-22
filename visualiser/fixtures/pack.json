@@ -7,35 +7,65 @@
                 {
                     "name": "KS1",
                     "children": [
-                        {"name": "Art and Design",
-                            "children": [
-                            {"name":"Art and design skills",
-                                "name":"Art in the real world",
-                                "name":"Craft",
-                                "name":"Design",
-                                "name":"Elements and principles of art",
-                                "name":"Fine art",
-                                "name":"The creative process"}
-                        ],
-                        "size": 20},
-                        {"name": "Geography", "size": 10},
-                        {"name": "Maths", "size": 23}
+                        {"name":"Art and Design",  "children": [
+                            { "name": "Disciplines" },
+                            { "name": "Visual and tactile elements",
+                                "children": [
+                                    {"name":"Colour"},
+                                    {"name":"Pattern"},
+                                    {"name":"Texture"},
+                                    {"name":"Line"},
+                                    {"name":"Shape"},
+                                    {"name":"Composition"},
+                                    {"name":"Composition"},
+                                ]
+                            },
+                            { "name": "Media and Materials" },
+                            { "name": "Inspiration and Investigation" },
+                            { "name": "Design activity" }
+                        ]},
+                        {"name":"Design and Technology"},
+                        {"name":"English"},
+                        {"name":"French"},
+                        {"name":"Geography"},
+                        {"name":"German"},
+                        {"name":"History"},
+                        {"name":"Mandarin"},
+                        {"name":"Maths"},
+                        {"name":"Modern Foreign Languages"},
+                        {"name":"Music"},
+                        {"name":"Physical Education"},
+                        {"name":"PSHE and Citizenship"},
+                        {"name":"Religious Studies"},
+                        {"name":"Science"},
+                        {"name":"Spanish"}
+                    ]
+                },
+                {
+                    "name": "Early Level",
+                    "children": [
+                        {"name": "Architecture"},
+                        {"name": "Art and Design"},
+                        {"name": "Biology"},
+                        {"name": "Maths"}
                     ]
                 },
                 {
                     "name": "KS2",
                     "children": [
-                        {"name": "Art & Design",  "children": [
-                            {"name":"Art and design skills",
-                                "name":"Art in the real world",
-                                "name":"Craft",
-                                "name":"Design",
-                                "name":"Elements and principles of art",
-                                "name":"Fine art",
-                                "name":"The creative process"}
-                        ], "size": 25},
-                        {"name": "Geography", "size": 14},
-                        {"name": "Maths", "size": 53}
+                        {"name": "Architecture", "size": 2},
+                        {"name": "Art and Design", "size":6},
+                        {"name": "Biology", "size": 40},
+                        {"name": "Maths", "size": 23}
+                    ]
+                },
+                {
+                    "name": "2nd Level",
+                    "children": [
+                        {"name": "Architecture", "size": 2},
+                        {"name": "Art and Design", "size":6},
+                        {"name": "Biology", "size": 40},
+                        {"name": "Maths", "size": 23}
                     ]
                 }
             ]
@@ -51,6 +81,7 @@
                         {"name": "Biology", "size": 40},
                         {"name": "Maths", "size": 23}
                     ]
+
                 }
             ]
         }
