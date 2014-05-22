@@ -1,4 +1,6 @@
 $('#pack_nav').click(function() {
+
+    $('.chart').empty();
     var w = 1280,
         h = 800,
         r = 720,
@@ -69,7 +71,9 @@ $('#pack_nav').click(function() {
 });
 
 $('#sunburst_nav').click(function() {
-    var width = 1280,
+
+    $('.chart').empty();
+    var width = 960,
         height = width,
         radius = width / 2,
         x = d3.scale.linear().range([0, 2 * Math.PI]),
@@ -214,6 +218,7 @@ $('#sunburst_nav').click(function() {
 });
 
 $('#blocks_name').click(function() {
+    $('.chart').empty();
     var margin = {top: 40, right: 10, bottom: 10, left: 10},
         width = 960 - margin.left - margin.right,
         height = 500 - margin.top - margin.bottom;

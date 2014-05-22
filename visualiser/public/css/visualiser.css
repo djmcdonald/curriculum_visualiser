@@ -60,3 +60,19 @@ circle.parent:hover {
 circle.child {
     pointer-events: none;
 }
+/* block */
+.node {
+    border: solid 1px white;
+    font: 10px sans-serif;
+    line-height: 12px;
+    overflow: hidden;
+    position: absolute;
+    text-indent: 2px;
+}
+
+/* sunburst */
+path {
+    stroke: #000;
+    stroke-width: 1.5;
+    cursor: pointer;
+}
