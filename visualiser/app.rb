@@ -8,6 +8,8 @@ set :environment, :development
 
 set :environment, :development
 
+set :environment, :development
+
 before do
   @rdf_repository = RDFRepository.new
   @level_builder = LevelBuilder.new @rdf_repository
