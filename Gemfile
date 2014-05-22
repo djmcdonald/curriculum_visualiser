@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
-gem 'sinatra'
+gem 'sinatra', '~> 1.4.5'
+gem 'sinatra-contrib', '~> 1.4.2'
 gem 'nokogiri', '1.5.9'
 gem 'shotgun'
 gem 'rest-client'

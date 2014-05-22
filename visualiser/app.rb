@@ -1,4 +1,5 @@
 require 'sinatra'
+require "sinatra/reloader" if development?
 require 'helpers/rdf_repository'
 
 $LOAD_PATH.unshift '.'
