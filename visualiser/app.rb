@@ -1,8 +1,9 @@
 require 'sinatra'
 require 'haml'
 require 'hamlbars'
-require 'helpers/level_builder'
+$LOAD_PATH.unshift '.'
 require 'helpers/phases_builder'
+require 'helpers/level_builder'
 
 before do
   @rdf_repository = RDFRepository.new

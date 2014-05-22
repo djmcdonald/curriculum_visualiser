@@ -18,11 +18,11 @@ function Visualiser() {
 		//console.log($('#template-div').html());
 	   });
 	};
-
+	this.showGuides = function(data){
+		$('.guides').toggle();
+	}
 	this.showLevelData = function(data){
 		//console.log(data);
-     		//this.efos = this.getDataForElements(domEls);
-                //this.containers = document.querySelectorAll('.flash-container');
     		$('.expandableLevelData').toggle();
 	};
 
@@ -32,6 +32,7 @@ function Visualiser() {
 		console.log(aData[1].replace(/\s/g, ''));
 		this.getRestfulData('/education/levels/'+ aData[1].replace(/\s/g, ''));
 	}
+
 
 };
 

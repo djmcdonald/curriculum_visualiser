@@ -16,13 +16,16 @@
         A tool to visualise the 
         %a{ :href => 'http://www.bbc.co.uk/ontologies/curriculum/2013-04-03.shtml', :title => 'Curriculum ontology' } Curriculum ontology.
         used by the
-        %a{ :href => 'http://www.bbc.co.uk/education', :title => 'Knowledge and Learning Beta site' } Knowledge and Learning 
-        Beta site
+        %a{ :href => 'http://www.bbc.co.uk/education', :title => 'Knowledge and Learning site' } Knowledge and Learning 
+        site
       #messages
       #template-div
 
       %script#phases-template(type="text/x-handlebars-template")
-        %h2 phases
+        %h2< 
+          %a{ :onClick=> 'javascript:visualGuide.showGuides(this)', :event => { :on => 'click', :action => 'clicked' } 	} phases
+        .guides 
+		
         = hb 'each phases' do
           %ul.phases
             %li
