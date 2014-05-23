@@ -42,6 +42,8 @@ text {
 
 text.parent {
     fill: #1f77b4;
+    font-weight:bold;
+    font-size: 1.5rem;
 }
 
 circle {

@@ -77,6 +77,63 @@
         {
             "name": "Secondary",
             "children" : [
+              {
+                    "name": "3rd Level",
+                    "children": [
+                        {"name":"English", "colour": "#ede487", "children": [
+                            { "name": "Listening and Talking" },
+                            { "name": "Reading",
+                                "children": [
+                                    {"name":"Understanding","colour": "#e8e596"},
+                                    {"name":"Analyzing", "colour": "#f0e2a3"},
+                                    {"name":"Evaluating", "colour": "#ede487"}
+                                ]
+                            },
+                            { "name": "Reading: enjoyment and choice" },
+                            { "name": "Writing" }
+                        ]},
+                        {"name": "French", "size": 4},
+                        {"name": "German", "size": 3},
+                        {"name": "Maths", "size": 12},
+                        {"name": "Modern Lanuages", "size": 4},
+                        {"name": "Music", "size": 5},
+                        {"name": "People", "size": 2},
+                        {"name": "Physical Education", "size": 8},
+                        {"name": "Religion", "size": 2},
+                        {"name": "Science", "size": 6},
+                        {"name": "Social Studes", "size": 6},
+                        {"name": "Spanish", "size": 23},
+                        {"name": "Technologies", "size": 23}
+
+                    ]
+                },
+                {
+                    "name": "4th Level",
+                    "children": [
+                        {"name": "Architecture", "size": 2},
+                        {"name": "Art and Design", "size":6},
+                        {"name": "Biology", "size": 40},
+                        {"name": "Maths", "size": 23}
+                    ]
+                },
+                {
+                    "name": "CA3",
+                    "children": [
+                        {"name": "Architecture", "size": 2},
+                        {"name": "Art and Design", "size":6},
+                        {"name": "Biology", "size": 40},
+                        {"name": "Maths", "size": 23}
+                    ]
+                },
+                {
+                    "name": "KS3",
+                    "children": [
+                        {"name": "Architecture", "size": 2},
+                        {"name": "Art and Design", "size":6},
+                        {"name": "Biology", "size": 40},
+                        {"name": "Maths", "size": 23}
+                    ]
+                },
                 {
                     "name": "GCSE",
                     "children": [
@@ -85,7 +142,51 @@
                         {"name": "Biology", "size": 40},
                         {"name": "Maths", "size": 23}
                     ]
-
+                },
+                {
+                    "name": "National 4",
+                    "children": [
+                        {"name": "Architecture", "size": 2},
+                        {"name": "Art and Design", "size":6},
+                        {"name": "Biology", "size": 40},
+                        {"name": "Maths", "size": 23}
+                    ]
+                },
+                {
+                    "name": "National 5",
+                    "children": [
+                        {"name": "Architecture", "size": 2},
+                        {"name": "Art and Design", "size":6},
+                        {"name": "Biology", "size": 40},
+                        {"name": "Maths", "size": 23}
+                    ]
+                },
+                {
+                    "name": "Naiseanta 4",
+                    "children": [
+                        {"name": "Architecture", "size": 2},
+                        {"name": "Art and Design", "size":6},
+                        {"name": "Biology", "size": 40},
+                        {"name": "Maths", "size": 23}
+                    ]
+                },
+                {
+                    "name": "TGAU",
+                    "children": [
+                        {"name": "Architecture", "size": 2},
+                        {"name": "Art and Design", "size":6},
+                        {"name": "Biology", "size": 40},
+                        {"name": "Maths", "size": 23}
+                    ]
+                },
+                {
+                    "name": "Higher",
+                    "children": [
+                        {"name": "Architecture", "size": 2},
+                        {"name": "Art and Design", "size":6},
+                        {"name": "Biology", "size": 40},
+                        {"name": "Maths", "size": 23}
+                    ]
                 }
             ]
         }
