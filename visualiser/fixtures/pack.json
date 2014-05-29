@@ -1,6 +1,3 @@
-
-
-
 {
 
     "name": "Levels",
@@ -42,6 +39,22 @@
                         {"name":"PSHE and Citizenship"},
                         {"name":"Religious Studies"},
                         {"name":"Science"},
+                        {"name":"Spanish", "colour": "#ede487", "children": [
+                            { "name": "Numbers",
+                                "children": [
+                                    {"name":"Daily Routines in Spanish","colour": "#e8e596"},
+                                    {"name":"Playground counting game from Spain", "colour": "#f0e2a3"}
+                                ]   
+                            },
+                            { "name": "At School",
+                                "children": [
+                                    {"name":"Daily Routines in Spanish","colour": "#e8e596"},
+                                    {"name":"Playground counting game from Spain", "colour": "#f0e2a3"}
+                                ]   
+                            },  
+                            { "name": "Cultures and Places" },
+                            { "name": "Stories, Poems and Songs" }
+                        ]},                         
                         {"name":"Spanish"}
                     ]
                 },
@@ -149,7 +162,24 @@
                         {"name": "Architecture", "size": 2},
                         {"name": "Art and Design", "size":6},
                         {"name": "Biology", "size": 40},
-                        {"name": "Maths", "size": 23}
+                        {"name": "Maths", "colour": "#ede487", "children": [
+                            { "name": "Relationships",
+                                "children": [
+                                    {"name":"Geometry","colour": "#e8e596"},
+                                    {"name":"Statistics","colour": "#e8e596"},
+                                    {"name":"Trigonometry","colour": "#e8e596"},
+                                    {"name":"Algebra", "colour": "#f0e2a3"}
+                                ]   
+                            },
+                            { "name": "Expressions and formulae",
+                                "children": [
+                                    {"name":"Geometry","colour": "#e8e596"},
+                                    {"name":"Statistics","colour": "#e8e596"},
+                                    {"name":"Trigonometry","colour": "#e8e596"}
+                                ]   
+                            },  
+                            { "name": "Numeracy" }
+                        ]}                         
                     ]
                 },
                 {
